@@ -1,0 +1,247 @@
+body{
+    background-color: #EDEFEE;
+    font-family: 'Markazi Text' serif;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.container{
+    background-color: lightpink;
+}
+h1{
+    font-size: 3rem;
+}
+h2{
+    font-size: 2rem;
+}
+header > img{
+    display: block;
+    margin: auto;
+    height: 150px;
+    width: 350px;
+}
+nav ul{
+    padding: 0;
+    border: 2px solid red;
+    border-radius: 15px;
+    height: 50px;
+    padding-top: 5px;
+    background-color: black;
+    list-style: none;
+    text-align: center;
+    word-spacing: 45px;
+    white-space: nowrap;
+}
+nav li{
+    display: inline-block;
+}
+li a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+section{
+    display: flex;
+}
+article{
+    flex: 1;
+}
+footer{
+    display: flex;
+}
+footer div{
+    flex: 1;
+}
+.footerimg{
+    /* border: 1px solid red; */
+    height: 75px;
+    width: 100px;
+    padding-left: 30px;
+}
+.copyright{
+    /* color: red; */
+    text-align: center;
+    margin-top: 25px;
+}
+.carousel-inner{
+    margin: auto;
+    border-radius: 15px;
+}
+.d-block{
+    height: 200px;
+    object-fit: cover;
+}
+img~p{
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    color: black;
+    font-weight: bold;
+    font-size: 30px;
+}
+#rewards{
+    /* border: 1px red solid; */
+    height: 60px;
+    display: flex;
+    width: 900px;
+    justify-content: space-around;
+    margin: auto;
+}
+.join{
+    /* border: solid 1px yellow; */
+    margin-top: 16px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: small;
+}
+.account{
+    /* border: 1px green solid; */
+    width: 250px ;
+    display: flex;
+    justify-content: space-between;
+}
+.account p{
+    /* border: 1px solid black; */
+    margin-top: 16px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: small;
+}
+button{
+    height: fit-content;
+    height: 52px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: small;
+}
+
+.center{
+    border: 3px solid green;
+    width: 18rem;
+    height: 90%;
+    margin: auto;
+
+}
+.hours{
+    /* border: 1px solid red; */
+    width: 300px;
+    margin: auto;
+}
+.rounded-start{
+    object-fit:fill;
+    height: 100%;
+    width: 600px;
+}
+.col-md-4{
+    overflow: hidden;
+}
+.mb-3{
+    border: 1px solid green;
+    height: 95%;
+}
+h1{
+    text-align: center;
+}
+input:focus{
+    border: 2px solid red;
+}
+fieldset {
+    background-color: #eeeeee;
+    padding-left: 25px;
+    padding-right: 25px;
+
+}
+
+legend {
+    background-color: gray;
+    color: white;
+    padding: 5px 1px;
+    width: inherit;
+}
+
+input {
+    border: 1px solid green;
+    margin: 5px;
+}
+.book{
+    padding: 25px;
+}
+  
+input[type="reset"], button[type="submit"]{
+    height: fit-content;
+    border-radius: 5px;
+}
+.aboutUs{
+    border: 1px solid green;
+    border-radius: 25px;
+    background-color: #eeeeee;
+    padding: 25px;
+}
+
+
+@media only screen and (max-width: 576px) {
+    /* For mobile phones: */
+    /* [class*="col-"] {
+        width: 120%;
+        padding: 0;
+    } */
+    .center{
+        width: 100%;
+        height: 97%;
+    }
+    .container{
+        overflow: hidden;
+        padding-top: 25px;
+    }
+    header > img{
+        display: block;
+        margin: auto;
+        height: 150px;
+        width: 200px;
+    }
+    nav ul{
+        word-spacing: 15px;
+        white-space: nowrap;
+    }
+    .footerimg{
+        /* border: 1px solid red; */
+        /* height: 75px;
+        width: 100px; */
+        padding-left: 5px;
+    }
+    .fish{
+        width: 184px;
+    }
+    .rounded-start{
+        object-fit:fill;
+        height: 100px;
+    }
+    input:not(.reset){
+        width: 100px;
+    }
+    textarea{
+        width: 160px;
+    }
+}
+@media only screen and (min-width: 576px) {
+    /* For mobile phones: */
+    /* [class*="col-"] {
+        width: 120%;
+        padding: 0;
+    } */
+
+    .center{
+        border: 1px solid green;
+        width: 75%;
+        height: 97%;
+    }
+    .container{
+        overflow: hidden;
+        padding-top: 25px;
+    }
+    .rounded-start{
+        object-fit: fill;
+        height: 248px;
+        width: 100%;
+    }
+}
+

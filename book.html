@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Little Lemon</title>
+    <meta name="description" content="Little Lemon Restaurant">
+    <meta name="author" content="Alpha Ly">
+    <meta name="image" content="logo.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+    
+    </style>
+</head>
+<body>
+    <header>
+        <img src="assets/img/logo.png" alt="">
+    </header>
+    <br>
+    <nav>
+        <ul>
+            <li><a href="indexTest2.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="book.html">Book</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <article>
+                <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="assets/img/spaghetti.jpg" class="d-block w-100" alt="...">
+                        <p>30% Off This Weekend</p>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="assets/img/mignon.jpg" class="d-block w-100" alt="...">
+                        <p>30% Off This Weekend</p>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="assets/img/salmon.jpg" class="d-block w-100" alt="...">
+                        <p>30% Off This Weekend</p>
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                      <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span> -->
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                      <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                <br>
+                <!-- <div id="rewards">
+                    <div id="join">
+                        <div class="join">
+                            <p><b>JOIN LITTLE LEMON REWARDS AND UNLOCK A FREE LEMON MEAL TODAY.</b></p>
+                        </div>
+                    </div>
+                    <div class="account">
+                        <button><b>CREATE AN ACCOUNT</b></button>
+                        <div><p><b>OR</b></p></div>
+                        <button><b>LOG IN</b></button>
+                    </div>
+                </div> -->
+            </article>
+        </section>
+        <!-- <section>
+            <div id="rewards">
+                <div id="join">
+                    <div class="join">
+                        <p><b>JOIN LITTLE LEMON REWARDS AND UNLOCK A FREE LEMON MEAL TODAY.</b></p>
+                    </div>
+                </div>
+                <div class="account">
+                    <button><b>CREATE AN ACCOUNT</b></button>
+                    <div><p><b>OR</b></p></div>
+                    <button><b>LOG IN</b></button>
+                </div>
+            </div>
+        </section> -->
+        <br>
+        <div class="container book">
+            <h1>Book a Table</h1>
+            <br>
+            <form action="/action_page.php" method="get">
+                <fieldset>
+        
+                    <legend>Personal Details</legend><br>
+                    <label for="todaysdate">Today's date</label>
+                    <br>
+                    <input type="date">
+                    <br><br>
+                    <label><p>Salutation</p></label>
+                    <select name="salutation" id="salutation">
+                        <option>--None--</option>
+                        <option>Mr.</option>
+                        <option>Ms.</option>
+                        <option>Mrs.</option>
+                        <option>Dr.</option>
+                        <option>Prof.</option>
+                    </select><br>
+                    <label>First name:</label>
+                    <input type="text" id="fname" name="firstName"/><br><br>
+                    <label>Last name:</label>
+                    <input name="lastName"/><br><br>
+                    <label for="todaysdate">Reservation date and time:</label>
+                    <br>
+                    <input type="datetime-local" id="todaysdate"name="todaysdate">
+                    <br><br>
+                    <label for="phone">Enter your phone number:</label>
+                    <input type="tel" id="phone" name="phone" pattern="[+]{1}[0-9]{11,14}"><br><br>
+                    <label>Email:<input type="email" name="email" required/></label><br><br>
+                    <label for="textarea">Is the reservation for a special occasion?</label><br>
+                    <textarea name="address" cols="30" rows="3"></textarea><br><br>
+                    <label for="study">Location:</label>
+                    <input id="study" name="study" list="field">
+                    <datalist id="field">
+                        <option value="Frisco" label=""></option>
+                        <option value="Uptown Dallas"></option>
+                        <option value="Plano"></option>
+                        <option value="McKinney"></option>
+                        <option value="SouthLake" label=""></option>
+                    </datalist>
+                    <br>
+                    <!-- options have labels also -->
+                    <br>
+                    <label for="volume">Number of people:</label>
+                    <input type="range" id="volume" name="volume" min="0" max="25" value="3" oninput=this.nextElementSibling.value=this.value>
+                    <output>5</output><br>
+                    <fieldset id="security">
+                        <label for="robot">I'm not a robot:<input type="checkbox" name="robot" id="security" ch></label><br>
+                        <label for="Terms">I agree with the terms:<input type="checkbox" name="terms" id="security"></label>
+                    </fieldset><br>
+                    <button type="submit">Submit</button><br><br>
+                    <!-- the onclick function works but not properly here! just an example -->
+                    <!-- <input type="submit">Submit</input> -->
+                    <input type="reset" class="reset">
+                    <br>
+                </fieldset>
+            </form>
+        </div>
+            
+    </main>
+    <br>
+    <hr>
+    <footer>
+        <div>
+            <img src="assets/img/logo.png" class="footerimg" alt="">
+        </div>
+        <div class="divright">
+            <p class="copyright">Copyright Little Lemon</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
